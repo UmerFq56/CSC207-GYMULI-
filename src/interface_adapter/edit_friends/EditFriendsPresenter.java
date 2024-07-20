@@ -14,6 +14,7 @@ public class EditFriendsPresenter implements EditFriendsOutputBoundary {
     @Override
     public void setPassView(EditFriendsOutputData outputData) {
 
+
     }
 
     @Override
