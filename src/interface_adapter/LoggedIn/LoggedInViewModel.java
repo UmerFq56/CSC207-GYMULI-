@@ -15,6 +15,9 @@ public class LoggedInViewModel extends ViewModel {
 
     public LoggedInViewModel() {}
 
+
+
+
     public void setState(LoggedInState state) {
         this.state = state;
     }
