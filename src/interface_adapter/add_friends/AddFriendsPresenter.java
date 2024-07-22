@@ -6,6 +6,9 @@ import use_case.add_friends.AddFriendsOutputBoundary;
 import use_case.add_friends.AddFriendsOutputData;
 
 public class AddFriendsPresenter implements AddFriendsOutputBoundary {
+    /**
+     * prepares viewmodel when friend is successfully added and unsuccessfully added
+     */
 
     private final AddFriendsViewModel addFriendsViewModel;
     private final ViewModelManager viewModelManager;

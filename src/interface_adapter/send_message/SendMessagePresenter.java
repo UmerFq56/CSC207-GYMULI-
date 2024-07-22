@@ -10,6 +10,10 @@ public class SendMessagePresenter implements SendMessageOutputBoundary {
         this.sendMessageViewModel = sendMessageViewModel;
     }
 
+    /**
+     * shows the view when a message sent successfully
+     * @param message
+     */
     @Override
     public void prepareSuccessView(SendMessageOutputData message) {
         SendMessageState state = sendMessageViewModel.getState();
@@ -19,6 +23,10 @@ public class SendMessagePresenter implements SendMessageOutputBoundary {
         sendMessageViewModel.firePropertyChange();
     }
 
+    /**
+     * changes the view to that when a message failed to sent
+     * @param error
+     */
     @Override
     public void prepareFailView(String error) {
         SendMessageState state = sendMessageViewModel.getState();

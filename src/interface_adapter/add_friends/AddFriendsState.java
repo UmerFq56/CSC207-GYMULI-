@@ -3,6 +3,9 @@ package interface_adapter.add_friends;
 import interface_adapter.Login.LoginState;
 
 public class AddFriendsState {
+    /**
+     * stores the state of the user's friends after adding a new friend
+     */
 
     private String currentUser = "";
     private String friend = "";

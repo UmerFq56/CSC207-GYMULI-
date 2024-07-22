@@ -5,6 +5,10 @@ import interface_adapter.ViewModel;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
+
+/**
+ * updates the view that the user sees when interacting with sending a message
+ */
 public class SendMessageViewModel extends ViewModel {
     private SendMessageState state = new SendMessageState();
     private final PropertyChangeSupport propertyChangeSupport = new PropertyChangeSupport(this);

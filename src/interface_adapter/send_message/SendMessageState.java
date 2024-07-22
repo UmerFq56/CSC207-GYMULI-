@@ -1,5 +1,9 @@
 package interface_adapter.send_message;
 
+
+/**
+ * controls the state of the message, including success and fail states
+ */
 public class SendMessageState {
     private boolean success;
     private String errorMessage;

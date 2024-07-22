@@ -4,6 +4,9 @@ import use_case.add_friends.AddFriendsInputBoundary;
 import use_case.add_friends.AddFriendsInputData;
 
 public class AddFriendsController {
+    /**
+     * handles adding friends to User's account
+     */
 
     private final AddFriendsInputBoundary addFriendsInputBoundary;
 

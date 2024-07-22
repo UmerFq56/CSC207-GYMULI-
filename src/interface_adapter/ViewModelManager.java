@@ -5,6 +5,9 @@ import entity.User;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
+/**
+ * stores the User Interaction data when user updates profile
+ */
 public class ViewModelManager {
     private final PropertyChangeSupport pcs = new PropertyChangeSupport(this);
     private String activeView;

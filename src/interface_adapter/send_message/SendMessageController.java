@@ -15,10 +15,10 @@ public class SendMessageController {
     }
 
     /**
-     *
+     * creates a new Message object with the following parameters
      * @param chatName
      * @param message
-     * @param time
+     * @param time - time of message creation
      * @param sender
      * @param receiver
      */
