@@ -41,7 +41,7 @@ public class ChatDataAccessObject implements RetrieveChatUserDataAccessInterface
      * @param messages                  A map of messages keyed by chat name.
      * @param messageFactory            The factory used to create Message objects.
      * @param chats                     A map of chats keyed by chat name.
-     * @param chatFactory               The factory used to create Chat objects.
+     * @param chatFactory    g           The factory used to create Chat objects.
      * @param userDataAccessObject      The UserDataAccessObject for user-related data operations.
      */
 
