@@ -9,9 +9,11 @@ import java.time.LocalTime;
 import java.time.format.DateTimeFormatter;
 
 public class SignupPresenter implements AccountCreationOutputBoundary {
+
     private final SignupViewModel signupViewModel;
     private final ViewModelManager viewModelManager;
     private final LoginViewModel loginViewModel;
+
 
     public SignupPresenter(ViewModelManager viewModelManager, SignupViewModel signupViewModel, LoginViewModel loginViewModel) {
         this.viewModelManager = viewModelManager;
@@ -19,11 +21,16 @@ public class SignupPresenter implements AccountCreationOutputBoundary {
         this.loginViewModel = loginViewModel;
     }
 
+    /**
+     * changes the view to show the successful account creation
+     * @param user - User of program
+     */
     @Override
     public void setPassView(AccountCreationOutputData user) {
         if (user == null || user.getCreationTime() == null) {
             throw new NullPointerException("AccountCreationOutputData or its creationTime is null");
         }
+
 
         LocalTime responseTime = LocalTime.parse(user.getCreationTime(), DateTimeFormatter.ISO_LOCAL_TIME);
         user.setCreationTime(responseTime.format(DateTimeFormatter.ofPattern("HH:mm:ss")));
@@ -36,6 +43,10 @@ public class SignupPresenter implements AccountCreationOutputBoundary {
         viewModelManager.firePropertyChanged();
     }
 
+    /**
+     * presents the failed account creation
+     * @param error - error message
+     */
     @Override
     public void setFailView(String error) {
         signupViewModel.setError(error);

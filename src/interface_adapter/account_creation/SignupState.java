@@ -4,6 +4,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class SignupState {
+
     private String username = "";
     private String password = "";
     private String repeatPassword = "";
@@ -15,9 +16,14 @@ public class SignupState {
     private String interest3 = "";
     private String error = "";
 
+
     public SignupState() {
     }
 
+    /**
+     * the following are setter and getter method to set and retrieve the account information
+     * @return each the elements of an account
+     */
     public String getUsername() {
         return username;
     }

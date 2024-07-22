@@ -6,8 +6,8 @@ public class Requests {
 
     /**
      *
-     * @param From
-     * @param To
+     * @param From - User Sender
+     * @param To - User receiver
      */
 
     public Requests(User From, User To) {

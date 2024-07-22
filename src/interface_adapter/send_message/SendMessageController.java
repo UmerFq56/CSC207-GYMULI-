@@ -14,6 +14,15 @@ public class SendMessageController {
         this.sendMessageInteractor = sendMessageInteractor;
     }
 
+    /**
+     *
+     * @param chatName
+     * @param message
+     * @param time
+     * @param sender
+     * @param receiver
+     */
+
     public void execute(String chatName, String message, LocalDateTime time, String sender, String receiver){
         SendMessageInputData inputData = new SendMessageInputData(chatName, message, LocalDateTime.now(), sender, receiver);
         sendMessageInteractor.execute(inputData);

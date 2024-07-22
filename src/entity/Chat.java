@@ -12,7 +12,7 @@ public class Chat {
      private LocalDateTime time;
 
      /**
-      * Requires:
+      * Requires: number of users is not 0
       * @param chatName -name of chatroom
       * @param users - the people using chat
       * @param noOfMembers - number of users

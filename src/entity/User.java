@@ -6,7 +6,7 @@ import java.util.List;
 public interface User {
     /**
      *
-     * @return
+     * @return information of User
      */
     String getUsername();
 

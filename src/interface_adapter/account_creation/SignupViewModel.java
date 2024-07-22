@@ -6,7 +6,11 @@ import javax.swing.*;
 import java.beans.PropertyChangeListener;
 import java.beans.PropertyChangeSupport;
 
+/**
+ *  SignupViewModel contains what the user sees on the account creation screen
+ */
 public class SignupViewModel extends ViewModel {
+
 
     public static final String CLEAR_BUTTON_LABEL = "Clear";
     public static final String TITLE_LABEL = "Sign Up View";
@@ -17,12 +21,11 @@ public class SignupViewModel extends ViewModel {
     public static final String INTEREST1_LABEL = "Interest 1";
     public static final String INTEREST2_LABEL = "Interest 2";
     public static final String INTEREST3_LABEL = "Interest 3";
-
     public static final String SIGNUP_BUTTON_LABEL = "Sign up";
 
     private SignupState state = new SignupState();
-    private final PropertyChangeSupport support = new PropertyChangeSupport(this);
 
+    private final PropertyChangeSupport support = new PropertyChangeSupport(this);
     public final JTextField usernameInputField = new JTextField(20);
     public final JPasswordField passwordInputField = new JPasswordField(20);
     public final JPasswordField repeatPasswordInputField = new JPasswordField(20);
@@ -39,6 +42,7 @@ public class SignupViewModel extends ViewModel {
     public final JLabel interest1Label = new JLabel(INTEREST1_LABEL);
     public final JLabel interest2Label = new JLabel(INTEREST2_LABEL);
     public final JLabel interest3Label = new JLabel(INTEREST3_LABEL);
+
 
     public SignupState getState() {
         return state;

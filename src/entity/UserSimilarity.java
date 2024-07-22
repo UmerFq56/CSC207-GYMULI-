@@ -1,6 +1,9 @@
 package entity;
 
 public class UserSimilarity {
+    /**
+     * calculates the similarity score between two users
+     */
     private final String username;
     private final double score;
 
