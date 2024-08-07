@@ -46,7 +46,7 @@ public class LoginView extends JPanel implements ActionListener, PropertyChangeL
         JLabel logoLabel = new JLabel();
         try {
             BufferedImage logoImage = ImageIO.read(new File("images/logo.png")); // Replace with your logo path
-            Image scaledImage = logoImage.getScaledInstance(90, 90, Image.SCALE_SMOOTH); // Adjust dimensions as needed
+            Image scaledImage = logoImage.getScaledInstance(100, 100, Image.SCALE_SMOOTH); // Adjust dimensions as needed
             logoLabel.setIcon(new ImageIcon(scaledImage));
         } catch (IOException e) {
             e.printStackTrace();
